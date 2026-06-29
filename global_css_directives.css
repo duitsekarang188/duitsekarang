@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+eof
+
+---
+
+### Langkah Mudah Untuk Selesaikan Sekarang:
+
+1. **Padam Fail Lama:** Pergi ke folder utama projek kau (`C:\Users\Vei\Desktop\duitsekarang\`) dan **padam (delete)** fail bernama `postcss.config.mjs`. Jangan biarkan ia ada di situ.
+   
+2. **Cipta Fail Baharu:**
+   * Cipta fail bernama `postcss.config.js` di **folder utama** dan masukkan kod pertama di atas.
+   * Cipta fail bernama `tailwind.config.js` di **folder utama** dan masukkan kod kedua di atas.
+   
+3. **Kemaskini CSS:**
+   * Buka fail `app/globals.css` di dalam **folder app** dan pastikan kandungannya sama seperti kod ketiga di atas.
+
+4. **Bersihkan Cache & Jalankan Semula:**
+   Buka terminal kau, taip arahan ini untuk bersihkan ralat lama, kemudian jalankan semula:
+   ```bash
+   rd /s /q .next
+   npm run dev
